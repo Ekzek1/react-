@@ -3,6 +3,14 @@ import PostItem from "./PostItem";
 
 const PostList = ({posts, title, remove}) => {
 
+  if(!posts.length){
+    return (
+      <h1 style={{textAlign: 'center', padding: '10px'}}>
+         Посты не найдены!
+      </h1>
+    )
+  }
+
   return(
     <>    
       <h1 style={{textAlign: 'center'}}>
